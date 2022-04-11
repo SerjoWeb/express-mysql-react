@@ -11,7 +11,7 @@ const port = 5050;
 const requests = require("./routes/requests");
 
 /** Initialize CORS */
-const cors = require('cors');
+const cors = require("cors");
 
 /** Allow CORS */
 app.use(cors());

@@ -4,7 +4,9 @@
   "description": "nodejs backend api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix index.js",
+    "format": "prettier -w ."
   },
   "author": "sergei ivanov",
   "license": "ISC",
@@ -12,5 +14,13 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
   }
 }
